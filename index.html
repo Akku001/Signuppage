@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="icon" href="images.png" type="image/png" sizes="10x10">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header       -->
+        <div class="header">
+            <div class="hd-icon">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="hd-signup">
+                <h2>Sign up</h2>
+            </div>
+        </div>
+
+        <div class="error-msg" id="error-msg">
+            <!-- <p>Maximum 8 length of password is required.</p> -->
+        </div>
+
+        <!-- title -->
+        <div class="sign-tit">
+            <p>Sign up with one of the following options.</p>
+            <div class="opt-log">
+                <div class="icons mr-rg">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="icons">
+                    <i class="fab fa-apple"></i>
+                </div>
+            </div>
+        </div>
+
+        <form action="#">
+            <div class="form">
+                <p>Username</p>
+                <input id='user' type="text" placeholder="Enter your Username">
+            </div>
+            <div class="form">
+                <p>Email</p>
+                <input id='email' type="email" placeholder="Enter your Email">
+            </div>
+            <div class="form">
+                <p>Password</p>
+                <input id='pass' type="password" placeholder="Enter your password">
+            </div>
+            <input id='btn' onclick="errormsg()" type="button" value="Sign up">
+        </form>
+
+        <div class="login">Already have an account?<a href="#">Login</a></div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

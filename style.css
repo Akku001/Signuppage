@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    word-spacing: 0.2rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    align-items: center;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.wrapper {
+    position: relative;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+/* header */
+
+.header {
+    display: flex;
+}
+
+.hd-icon:hover {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+.hd-icon {
+    margin-right: 0.3rem;
+    border: 1px solid #fff;
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background: rgb(34, 32, 32);
+    cursor: pointer;
+}
+
+.hd-signup {
+    margin-left: 0.3rem;
+}
+
+
+/* error text */
+
+.error-msg {
+    margin-top: 1rem;
+    display: none;
+    text-align: center;
+    padding: 0.3rem 0.1rem;
+    border: 2px solid #d45718;
+    background: #ef9d5146;
+    background: -webkit-linear-gradient(top left, #EF9E51, #F48505);
+    background: -moz-linear-gradient(top left, #EF9E51, #F48505);
+    background: linear-gradient(to bottom right, #EF9E51, #F48505);
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.signup {
+    margin-top: 1rem;
+    display: none;
+    text-align: center;
+    padding: 0.3rem 0.1rem;
+    border: 2px solid #63d471;
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.error-msg p {
+    color: #000;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.error-msg .signup {
+    color: #000;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.sign-tit {
+    margin-top: 2rem;
+}
+
+
+/* title */
+
+.sign-tit p {
+    font-size: 0.7rem;
+}
+
+.sign-tit .opt-log {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-tit .opt-log .mr-rg {
+    margin-right: 2rem;
+}
+
+.sign-tit .opt-log .icons:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+.sign-tit .opt-log .icons {
+    margin-top: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    padding: 0.5rem 2.9rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    background: rgb(27, 26, 26);
+}
+
+
+/* form */
+
+form {
+    margin-top: 1.3rem;
+}
+
+form .form {
+    margin-top: 0.5rem;
+}
+
+form .form p {
+    font-size: 0.9rem;
+}
+
+form .form input:focus {
+    outline: none;
+}
+
+form .form input {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    border: none;
+    border: 1px solid #e84393;
+}
+
+
+/* button */
+
+form input[type='button']:hover {
+    background: #CE1294;
+    background: -webkit-linear-gradient(top left, #CE1294, #EA88E7);
+    background: -moz-linear-gradient(top left, #CE1294, #EA88E7);
+    background: linear-gradient(to bottom right, #CE1294, #EA88E7);
+}
+
+form input[type='button'] {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.6rem 0;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: #B027D1;
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+/* login */
+
+.login {
+    margin-top: 1.3rem;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+.login a {
+    margin-left: 0.2rem;
+    color: #C5019B;
+    cursor: pointer;
+}
